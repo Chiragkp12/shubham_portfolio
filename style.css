@@ -998,27 +998,144 @@ justify-content: space-between;
     box-shadow: 0 0 25px rgba(212,175,55,0.7);
 }
 /* ========================= */
-/* EDUCATION & EXPERIENCE */
+/* EDUCATION CARD */
 /* ========================= */
 
-.timeline{
+.education-card{
+
+    height:100%;
+
+    text-align:center;
 
     display:flex;
 
     flex-direction:column;
 
-    gap:30px;
+    justify-content:center;
+
+    min-height:250px;
 }
 
-.timeline-card{
+.education-card h3{
 
-    background:#111;
+    line-height:1.5;
+}
 
-    border:1px solid rgba(212,175,55,0.2);
+/* ========================= */
+/* EXPERIENCE TIMELINE */
+/* ========================= */
+
+.experience-section{
+
+    padding:100px 0;
+
+    background:#000;
+}
+
+/* Timeline */
+
+.experience-timeline{
+
+    position:relative;
+
+    max-width:1000px;
+
+    margin:auto;
+}
+
+/* Vertical Line */
+
+.experience-timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:#d4af37;
+
+    transform:translateX(-50%);
+}
+
+/* Timeline Item */
+
+.experience-item{
+
+    position:relative;
+
+    width:50%;
+
+    padding:30px 40px;
+}
+
+/* Left Side */
+
+.experience-item:nth-child(odd){
+
+    left:0;
+
+    text-align:right;
+}
+
+/* Right Side */
+
+.experience-item:nth-child(even){
+
+    left:50%;
+}
+
+/* Timeline Dot */
+
+.experience-dot{
+
+    position:absolute;
+
+    top:40px;
+
+    width:20px;
+
+    height:20px;
+
+    background:#d4af37;
+
+    border-radius:50%;
+
+    box-shadow:
+    0 0 20px #d4af37;
+}
+
+/* Dot Position */
+
+.experience-item:nth-child(odd) .experience-dot{
+
+    right:-10px;
+}
+
+.experience-item:nth-child(even) .experience-dot{
+
+    left:-10px;
+}
+
+/* Card */
+
+.experience-card{
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(212,175,55,0.3);
+
+    border-radius:20px;
 
     padding:30px;
 
-    border-radius:20px;
+    backdrop-filter:blur(10px);
 
     transition:0.4s ease;
 
@@ -1026,33 +1143,33 @@ justify-content: space-between;
     0 0 15px rgba(212,175,55,0.1);
 }
 
-.timeline-card:hover{
+/* Hover */
+
+.experience-card:hover{
 
     transform:translateY(-8px);
 
     box-shadow:
-    0 0 25px rgba(212,175,55,0.4);
+    0 0 25px rgba(212,175,55,0.5);
 }
 
-.timeline-card h3{
+/* Text */
+
+.experience-card h3{
 
     color:#d4af37;
 
-    font-size:1.6rem;
-
     margin-bottom:10px;
 }
 
-.timeline-card h4{
+.experience-card h4{
 
     color:#fff;
 
-    font-size:1.2rem;
-
     margin-bottom:10px;
 }
 
-.timeline-card span{
+.experience-card span{
 
     color:#aaa;
 
@@ -1061,16 +1178,46 @@ justify-content: space-between;
     margin-bottom:20px;
 }
 
-.timeline-card ul{
+.experience-card ul{
 
     padding-left:20px;
 }
 
-.timeline-card ul li{
+.experience-card ul li{
 
     color:#ddd;
 
     margin-bottom:10px;
 
     line-height:1.7;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:768px){
+
+    .experience-timeline::before{
+
+        left:10px;
+    }
+
+    .experience-item{
+
+        width:100%;
+
+        padding-left:50px;
+
+        padding-right:10px;
+
+        left:0 !important;
+
+        text-align:left !important;
+    }
+
+    .experience-dot{
+
+        left:0 !important;
+    }
 }
