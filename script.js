@@ -4,8 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     strings: [
       "Performance Marketer",
-      "Digital Marketer",
-      "Data Analyst"
+      "Lead Generation Specialist"
     ],
 
     typeSpeed: 70,
