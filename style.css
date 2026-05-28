@@ -998,27 +998,108 @@ justify-content: space-between;
     box-shadow: 0 0 25px rgba(212,175,55,0.7);
 }
 /* ========================= */
-/* EDUCATION CARD */
+/* EDUCATION SECTION */
 /* ========================= */
 
-.education-card{
-
-    height:100%;
-
-    text-align:center;
+.education-wrapper{
 
     display:flex;
 
-    flex-direction:column;
-
     justify-content:center;
 
-    min-height:250px;
+    gap:40px;
+
+    flex-wrap:wrap;
 }
+
+/* Card */
+
+.education-card{
+
+    flex:1;
+
+    min-width:320px;
+
+    max-width:500px;
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(212,175,55,0.3);
+
+    backdrop-filter:blur(10px);
+
+    transition:0.4s ease;
+
+    box-shadow:
+    0 0 25px rgba(212,175,55,0.08);
+}
+
+/* Hover Effect */
+
+.education-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 0 35px rgba(212,175,55,0.35);
+}
+
+/* Heading */
 
 .education-card h3{
 
-    line-height:1.5;
+    color:#fff;
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+    line-height:1.4;
+}
+
+/* College */
+
+.education-card h4{
+
+    color:#f5f5f5;
+
+    font-size:1.4rem;
+
+    margin-bottom:15px;
+}
+
+/* Year */
+
+.education-card span{
+
+    color:#d4af37;
+
+    font-size:1.1rem;
+
+    font-weight:600;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .education-wrapper{
+
+        flex-direction:column;
+
+        align-items:center;
+    }
+
+    .education-card{
+
+        width:100%;
+    }
 }
 
 /* ========================= */
