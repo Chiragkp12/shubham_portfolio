@@ -127,6 +127,7 @@ header nav ul li a.active::after {
 
 /* CV Button */
 .cvbtn {
+.cvbtn {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -207,9 +208,9 @@ section {
 .btn-box {
     display: flex;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 40px;
     padding-top: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 /* Social Icons */
@@ -1250,8 +1251,7 @@ justify-content: space-between;
 }
 
 /* ===================================== */
-/* MOBILE RESPONSIVE FIX */
-/* Paste at END of CSS */
+/* MOBILE RESPONSIVE */
 /* ===================================== */
 
 @media (max-width: 768px) {
@@ -1345,12 +1345,13 @@ justify-content: space-between;
         align-items: center;
     }
 
-    .btn {
-        width: 100%;
-        max-width: 250px;
-        margin: 8px 0;
-    }
-    .btn-box{
+.btn {
+    width: 100%;
+    max-width: 250px;
+    margin: 8px 0;
+}
+
+.btn-box{
     padding-top:15px;
     padding-bottom:25px;
 }
