@@ -262,11 +262,20 @@ section {
 }
 
 .btn{
-    padding:12px 30px;
+    display:inline-block;
+    padding:15px 35px;
+    background:#d4af37;
+    color:#000;
     border-radius:50px;
     font-weight:600;
     text-decoration:none;
     transition:0.4s ease;
+    box-shadow:0 0 15px rgba(212,175,55,.4);
+}
+
+.btn:hover{
+    background:#ffd700;
+    transform:translateY(-3px);
 }
 
 .btn-primary{
