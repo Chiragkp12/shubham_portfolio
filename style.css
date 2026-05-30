@@ -153,20 +153,25 @@ section {
 /* Hero Section */
 @media (max-width:768px){
 
-.hero-container{
-    display:flex;
-    justify-content:space-between;
-}
+@media (max-width:768px){
 
-.hero-image img{
-    height:600px;
-    width:600px;
-    min-width:400px;
+.hero-container{
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:30px;
+    padding:2rem 5%;
 }
 
 .hero-content{
-    max-width:50%;
+    max-width:100%;
 }
+
+.hero-image img{
+    width:280px;
+    height:280px;
+    min-width:auto;
+}
+
 .hero-content h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -185,6 +190,7 @@ section {
     font-size: 1.2rem;
     margin: 2rem 0;
 }
+
 
 
 /* Social Icons */
