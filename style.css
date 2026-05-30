@@ -195,11 +195,37 @@ section {
 }
 
 .hero-content p{
-    font-size:1.1rem;
-    line-height:1.8;
-    color:#ddd;
-    margin:25px 0;
+    font-size:1.05rem;
+    line-height:1.9;
+    color:#e5e5e5;
+    margin:20px 0;
+    text-align:justify;
+    max-width:650px;
 }
+
+#about .hero-content{
+    max-width:700px;
+}
+
+#about .hero-content h1{
+    margin-bottom:15px;
+}
+
+#about .hero-content h2{
+    font-size:1.8rem;
+    margin-bottom:25px;
+}
+
+#about .social-icons{
+    margin-top:30px;
+    margin-bottom:25px;
+}
+
+#about .hero-btn{
+    margin-top:15px;
+}
+
+
 
 /* Social Icons */
 
@@ -1347,6 +1373,20 @@ justify-content: space-between;
         width: 100%;
         max-width: 250px;
     }
+
+    #about .hero-content p{
+    text-align:left;
+    font-size:1rem;
+    line-height:1.8;
+}
+
+#about .hero-content{
+    padding:0 10px;
+}
+
+    #about .hero-content{
+    max-width:800px;
+}
 
     /* ================= */
     /* Profile */
