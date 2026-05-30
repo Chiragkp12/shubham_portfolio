@@ -201,6 +201,14 @@ section {
     margin:25px 0;
 }
 
+.hero-buttons,
+.btn-box {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
 /* Social Icons */
 
 .social-icons{
